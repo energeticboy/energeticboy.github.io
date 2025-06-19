@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>butterfly使用cdn优化</title>
+      <link href="/2025/06/19/butterfly%E4%BD%BF%E7%94%A8cdn%E4%BC%98%E5%8C%96/"/>
+      <url>/2025/06/19/butterfly%E4%BD%BF%E7%94%A8cdn%E4%BC%98%E5%8C%96/</url>
+      
+        <content type="html"><![CDATA[<h2 id="hexo-butterfly主题配置cdn加速"><a href="#hexo-butterfly主题配置cdn加速" class="headerlink" title="hexo+butterfly主题配置cdn加速"></a>hexo+butterfly主题配置cdn加速</h2><p><strong>版本</strong></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo@7.3.0</span><br><span class="line">hexo-theme-butterfly@5.2.2</span><br></pre></td></tr></table></figure><h3 id="首先设置-config-butterfly-yml文件中cdn选项"><a href="#首先设置-config-butterfly-yml文件中cdn选项" class="headerlink" title="首先设置_config.butterfly.yml文件中cdn选项"></a>首先设置_config.butterfly.yml文件中cdn选项</h3><p>配置<code>third_part_provider:</code>为<code>flase</code>，然后必须设置<code>custom_format</code></p><blockquote><p>配置cdn注意</p></blockquote><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">格式为：网址+$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;min_cdnjs_file&#125;</span><br><span class="line">可以先访问下官网看下那个快选哪个</span><br><span class="line">https://cdn.staticfile.org/$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;min_cdnjs_file&#125;</span><br><span class="line">https://cdn.bootcdn.net/ajax/libs/$&#123;cdnjs_name&#125;/$&#123;version&#125;/$&#123;min_cdnjs_file&#125;</span><br></pre></td></tr></table></figure><p>具体可查看官网<a href="https://butterfly.js.org/posts/4aa8abbe/">Butterfly 文檔(三) 主題配置 | Butterfly</a></p><p><img src="https://s2.loli.net/2025/06/19/jJC2qTeOpZAW1bg.png" alt="image-20250619123008800"></p><p>配置好后执行<code>npx hexo g&amp;&amp;npx hexo s</code>重新加载界面即可应用。</p><h3 id="配置Option选项（可选）"><a href="#配置Option选项（可选）" class="headerlink" title="配置Option选项（可选）"></a>配置Option选项（可选）</h3><p>打开网页F12看是否有爆红资源未加载。有的话可以单独配置该资源</p><p>比如我这里使用了字节的cdn加速但是<a href="https://cdn.bytedance.com/font-awesome/6.6.0/css/all.min.css%E4%BE%9D%E7%84%B6%E5%8A%A0%E8%BD%BD%E5%A4%B1%E8%B4%A5%E3%80%82">https://cdn.bytedance.com/font-awesome/6.6.0/css/all.min.css依然加载失败。</a></p><p>此时可以配置option单独设置</p><p><img src="https://s2.loli.net/2025/06/19/jDRWFO5th9y8bSo.png" alt="image-20250619123909088"></p><p>一下是我使用的一些配置项</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">fontawesome:</span> <span class="string">https://npm.elemecdn.com/@fortawesome/fontawesome-free@6.2.1/css/all.min.css</span></span><br><span class="line"><span class="attr">main:</span> <span class="string">https://cdn.staticfile.org/hexo-theme-butterfly/4.9.0/js/main.min.js</span></span><br></pre></td></tr></table></figure><p>更多配置项可参考：<a href="https://blog.zhheo.com/p/790087d9.html">Butterfly CDN链接更改指南，替换jsdelivr提升访问速度 | 张洪Heo</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>解决hexo图片不显示问题</title>
       <link href="/2025/06/18/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/"/>
       <url>/2025/06/18/%E8%A7%A3%E5%86%B3hexo%E5%9B%BE%E7%89%87%E4%B8%8D%E6%98%BE%E7%A4%BA%E9%97%AE%E9%A2%98/</url>
@@ -55,6 +68,19 @@
     
     
     <entry>
+      <title>Hello World</title>
+      <link href="/2024/11/14/hello-world/"/>
+      <url>/2024/11/14/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p><strong>注意：新版需要加npx才能运行</strong><br>安装必要插件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>test</title>
       <link href="/2024/11/14/test/"/>
       <url>/2024/11/14/test/</url>
@@ -68,19 +94,6 @@
             <tag> 测试 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2024/11/14/hello-world/"/>
-      <url>/2024/11/14/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><p><strong>注意：新版需要加npx才能运行</strong><br>安装必要插件</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-      
-      
       
     </entry>
     
