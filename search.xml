@@ -12,6 +12,12 @@
       
       
       
+        <tags>
+            
+            <tag> butterfly, hexo, 优化 </tag>
+            
+        </tags>
+      
     </entry>
     
     
@@ -34,7 +40,7 @@
       <link href="/2025/06/17/butterfly%E7%BE%8E%E5%8C%96/"/>
       <url>/2025/06/17/butterfly%E7%BE%8E%E5%8C%96/</url>
       
-        <content type="html"><![CDATA[<h3 id="修改顶部字体"><a href="#修改顶部字体" class="headerlink" title="修改顶部字体"></a>修改顶部字体</h3><p><img src="/2025/06/17/butterfly%E7%BE%8E%E5%8C%96/image.png" alt="alt text"></p><p>效果图<br><img src="/2025/06/17/butterfly%E7%BE%8E%E5%8C%96/image-2.png" alt="alt text"></p><p>测试</p><p><img src="https://s2.loli.net/2025/06/18/VLYyozmFpkuEecf.png" alt="image-20250618155819116"></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="修改顶部字体"><a href="#修改顶部字体" class="headerlink" title="修改顶部字体"></a>修改顶部字体</h3><p><img src="/2025/06/17/butterfly%E7%BE%8E%E5%8C%96/image.png" alt="alt text"></p><p>效果图<br><img src="/2025/06/17/butterfly%E7%BE%8E%E5%8C%96/image-2.png" alt="alt text"></p><p>测试</p><p><img src="https://s2.loli.net/2025/06/18/VLYyozmFpkuEecf.png" alt="image-20250618155819116"></p><h3 id="细节优化"><a href="#细节优化" class="headerlink" title="细节优化"></a>细节优化</h3><h4 id="设置snackbar"><a href="#设置snackbar" class="headerlink" title="设置snackbar"></a>设置snackbar</h4><p>在<code>_config.butterfly.yml</code>中修改以下配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">snackbar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><h4 id="配置图片查看模式"><a href="#配置图片查看模式" class="headerlink" title="配置图片查看模式"></a>配置图片查看模式</h4><p>在<code>_config.butterfly.yml</code>中修改以下配置：</p><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">lightbox:</span> <span class="string">fancybox</span> <span class="string">/</span> <span class="string">medium_zoom</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
